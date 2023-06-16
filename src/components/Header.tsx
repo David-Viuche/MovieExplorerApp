@@ -31,8 +31,8 @@ export const Header = () => {
       </div>
       <nav className={`bg-cyan-700 absolute p-5 top-14 inset-x-0 transition transform origin-top-right ${(!isOpen) && 'hidden'} sm:block opacity-95 sm:relative sm:top-0`}>
         <ul className='flex flex-col justify-center items-center gap-5 text-center w-full sm:flex-row sm:h-14'>
-          <HeaderLink href='/' ariaLabel='redirección a la página principal'>Inicio</HeaderLink>
-          <HeaderLink href='/movies' ariaLabel='redirección a la página para concocer más'>Acerca de</HeaderLink>
+          <HeaderLink href='/' ariaLabel='redirección a la página principal'>Home</HeaderLink>
+          <HeaderLink href='/about' ariaLabel='redirección a la página para concocer más'>About</HeaderLink>
           <HeaderLink href='https://github.com/David-Viuche/MovieExplorerApp' target='_blank' ariaLabel='redirección al repo de github del proyecto'><AiOutlineGithub className='h-8 w-8' /></HeaderLink>
         </ul>
       </nav>
