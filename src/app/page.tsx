@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Result } from '@/types'
 import MovieCard from '@/components/MovieCard'
 import { useFetchMovies } from '@/hooks/useFetchMovies'
-import SearchBar from '@/components/SearchBar'
 import Loader from '@/components/Loader'
 
 export default function Home() {

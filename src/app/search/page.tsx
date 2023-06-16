@@ -1,7 +1,6 @@
 'use client'
 import Loader from '@/components/Loader';
 import MovieCard from '@/components/MovieCard';
-import SearchBar from '@/components/SearchBar';
 import { useFetchSearchMovies } from '@/hooks/useFetchSearchMovies';
 import { Result } from '@/types';
 import { useSearchParams, useRouter } from 'next/navigation';
