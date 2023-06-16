@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { HeaderLink } from './HeaderLink'
 import { AiOutlineCloseSquare, AiOutlineGithub } from 'react-icons/ai/index.js'
 import { TfiMenuAlt } from 'react-icons/tfi/index.js'
+import Link from 'next/link'
 
 export const Header = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -15,7 +16,7 @@ export const Header = () => {
     <header className='bg-cyan-700 text-lg text-white flex flex-col w-full h-auto sm:flex-row sm:justify-around sm:h-auto'>
       <div className='flex justify-between items-center p-3'>
         <h2 className='sm:-m-0'>
-          Movies Explorer
+          <Link href='/' >Movies Explorer</Link>
         </h2>
         <div onClick={handleOnclick} className='sm:hidden'>
 
@@ -32,7 +33,7 @@ export const Header = () => {
         <ul className='flex flex-col justify-center items-center gap-5 text-center w-full sm:flex-row sm:h-14'>
           <HeaderLink href='/' ariaLabel='redirección a la página principal'>Inicio</HeaderLink>
           <HeaderLink href='/movies' ariaLabel='redirección a la página para concocer más'>Acerca de</HeaderLink>
-          <HeaderLink href='https://github.com/david-viuche' target='_blank' ariaLabel='redirección al perfil de github'><AiOutlineGithub className='h-8 w-8' /></HeaderLink>
+          <HeaderLink href='https://github.com/David-Viuche/MovieExplorerApp' target='_blank' ariaLabel='redirección al repo de github del proyecto'><AiOutlineGithub className='h-8 w-8' /></HeaderLink>
         </ul>
       </nav>
     </header>
