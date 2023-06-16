@@ -11,7 +11,7 @@ export default function MovieCard({ movie, selectedMovieId, handleCardClick }: {
   };
 
   return (
-    <div className='relative w-full rounded-xl max-w-xs shadow-md overflow-hidden h-fit hover:cursor-pointer' onClick={() => handleCardClick(movie.id)}>
+    <div className='relative w-full rounded-xl max-w-xs shadow-md overflow-hidden h-fit hover:cursor-pointer hover:scale-95' onClick={() => handleCardClick(movie.id)}>
 
       <img src={movie.primaryImage?.url || '/no_imagen.jpg'} onError={handleImageError} className={`aspect-[9/16] w-full ${(selectedMovieId === movie.id) ? 'blur-[2px]' : ''}`} alt={movie.titleText.text} />
       {

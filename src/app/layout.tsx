@@ -1,6 +1,7 @@
 
 import './globals.css'
 import { Header } from '../components/Header'
+import SearchBar from '@/components/SearchBar'
 
 export const metadata = {
   title: 'Movies Explorer',
@@ -14,8 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>
+      <body className='flex flex-col items-center'>
         <Header />
+        <SearchBar />
         {children}
       </body>
     </html>

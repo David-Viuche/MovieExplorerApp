@@ -12,7 +12,7 @@ export default function SearchBar() {
     e.preventDefault();
 
     if (searchQuery.trim() !== '') {
-      router.push(`/search?q=${encodeURIComponent(searchQuery)}`);
+      router.push(`/search?q=${encodeURIComponent(searchQuery.toLowerCase())}`);
     }
   };
 
@@ -21,9 +21,9 @@ export default function SearchBar() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 justify-center items-center">
-      <input type='text' placeholder="type to search..." className='p-2 shadow-md rounded-md border-2' onChange={handleChange} />
-      <button type="submit" className='bg-slate-400 rounded-full p-2 hover:bg-slate-300'>
+    <form onSubmit={handleSubmit} className="flex gap-2 justify-center items-center py-20">
+      <input type='text' placeholder="type to search..." className='p-2 shadow-md rounded-md border-2' onChange={handleChange} value={searchQuery} />
+      <button type="submit" className='bg-slate-400 rounded-full p-2 hover:bg-slate-300 hover:scale-110'>
         <AiOutlineSearch className='w-8 h-auto text-white' />
       </button>
     </form>
