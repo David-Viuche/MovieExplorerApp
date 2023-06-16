@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# App creada como prueba frontend
 
-## Getting Started
 
-First, run the development server:
+## Explorador de películas
 
+Esta aplicación es una plataforma en línea que te permite explorar y descubrir películas de una manera fácil y conveniente. Con nuestra barra de búsqueda intuitiva, puedes buscar películas por título y obtener una lista de películas coincidentes. Al hacer clic en una película, tendrás acceso a información detallada, como el título, la fecha de lanzamiento y una breve sinopsis. Ya sea que estés buscando películas populares o quieras descubrir gemas ocultas, nuestra aplicación está aquí para ayudarte a encontrar las películas perfectas para tu gusto. ¡Disfruta de una experiencia cinematográfica excepcional con nuestra aplicación!. La aplicación ha sido desarrollada utilizando las siguientes tecnologías:
+
+- Next.js
+- React.js
+- Tailwind CSS
+- Typescript
+- Usando la API de [https://rapidapi.com/SAdrian/api/moviesdatabase/](https://rapidapi.com/SAdrian/api/moviesdatabase/)
+
+### Características
+- La aplicación tiene una página de inicio que muestra una barra de búsqueda y una lista de películas populares.
+  
+  ![image](https://github.com/David-Viuche/MovieExplorerApp/assets/39018284/8fed3796-ee1b-455b-bdd1-fdee9ae90926)
+
+- Los usuarios pueden buscar películas por título, y la aplicación muestra una lista de películas coincidentes.
+  
+![image](https://github.com/David-Viuche/MovieExplorerApp/assets/39018284/b5940cbe-9255-43a8-b431-87f41029d9b2)
+
+- Al hacer clic en una película de la lista, se muestra información adicional sobre la película, incluyendo el título, la fecha de lanzamiento 
+
+![image](https://github.com/David-Viuche/MovieExplorerApp/assets/39018284/cd6f8403-e7d1-42a4-899f-919f70939a6a)
+
+### Instalación
+Clona el repositorio en tu máquina local:
+```bash
+git clone https://github.com/David-Viuche/MovieExplorerApp.git
+```
+Navega hasta el directorio del proyecto:
+```bash
+cd repo
+```
+Instala las dependencias:
+```bash
+npm install
+```
+Inicia la aplicación:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+La aplicación estará disponible en http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuración
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Crea un archivo .env.local en el directorio raíz del proyecto y agrega la siguiente variable de entorno ejemplo:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+NEXT_PUBLIC_API_KEY="api_key de la API"
+```
+Reemplaza NEXT_PUBLIC_API_KEY con tus claves de API.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
