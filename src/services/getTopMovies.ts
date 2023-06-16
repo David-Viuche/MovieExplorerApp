@@ -14,7 +14,6 @@ export const getTopMovies = async () => {
   try {
     const response = await fetch(url, options);
     const result: ResultTopMovies = await response.json();
-    console.log(result);
     return result
   } catch (error) {
     console.error(error);
