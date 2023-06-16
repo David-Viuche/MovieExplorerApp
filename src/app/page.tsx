@@ -27,6 +27,7 @@ export default function Home() {
 
       <SearchBar />
 
+      <h1 className='text-lg'>Upcoming movies</h1>
       <section className='grid grid-flow-row gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-4xl'>
         {
           isLoading && <Loader />
