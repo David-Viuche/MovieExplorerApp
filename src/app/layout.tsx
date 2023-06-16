@@ -1,6 +1,7 @@
 
 import './globals.css'
 import { Header } from '../components/Header'
+import SearchBar from '@/components/SearchBar'
 
 export const metadata = {
   title: 'Movies Explorer',
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="es">
       <body>
         <Header />
+        <SearchBar />
         {children}
       </body>
     </html>
